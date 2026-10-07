@@ -1,3 +1,9 @@
 node_modules/
 dist/
 build/
+
+.env
+.env.*
+!.env.example
+*serviceAccount*.json
+*service-account*.json
