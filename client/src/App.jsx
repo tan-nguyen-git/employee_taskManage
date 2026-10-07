@@ -5,9 +5,30 @@ function App() {
   const [phoneNumber, setPhoneNumber] = useState("")
   const [accessCode, setAccessCode] = useState("")
 
-  function handleSendCode(event){
+  async function handleSendCode(event){
     event.preventDefault();
-    console.log("Send code to:", phoneNumber);
+
+    try{
+      const response = await fetch("/api/owner/CreateNewAcessCode",{
+        method: "POST",
+        headers:{
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({phoneNumber})
+      })
+      
+      const data = await response.json()
+      if(!response.ok){
+        throw new Error(data.message)
+      }
+      alert(data.message)
+
+    }
+    catch(error){
+      alert(error.message)
+    }
+
+   
   }
   function handleVerifyCode(event) {
     event.preventDefault();
