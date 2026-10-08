@@ -38,7 +38,6 @@ A real-time task management app for a manager and employees. The React/Vite clie
 
 ![Firebase Realtime Database](docs/screenshots/img3.png)
 
-Before sharing the README publicly, redact phone numbers, email addresses, verification codes, and private message text from screenshots where needed.
 
 ## What the app does
 
@@ -73,7 +72,7 @@ Install [Node.js](https://nodejs.org/) 20.12 or newer. The manager record and Fi
 
 - Put the Firebase Admin service account JSON at `server/service-account.json`. This private key file is ignored by Git; never commit it.
 - Confirm `server/firebase.js` points to the intended Realtime Database URL.
-- Create the manager record in Realtime Database at `owners/owner_001`, with `role: "owner"` and `phoneNum` in E.164 format, for example `+13312407821`.
+- Create the manager record in Realtime Database at `owners/owner_001`, with `role: "owner"` and `phoneNum` in E.164 format, for example `+1331234567`.
 
 ### 2. Configure environment variables
 
