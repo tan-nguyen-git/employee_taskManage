@@ -4,38 +4,41 @@ A real-time task management app for a manager and employees. The React/Vite clie
 
 ## Screenshots
 
-
-
 ### Login
 
 ![Manager and employee login screen](docs/screenshots/login.png)
 
 ### Manager verification code
 
-
-![Manager verification code screen](docs/screenshots/manager-verify-code.png)
+![Manager verification code SMS](docs/screenshots/manager-verify-code.png)
 
 ### Manager dashboard
 
+![Manager task dashboard](docs/screenshots/manager-dask-board.png)
 
+![Manager task list and controls](docs/screenshots/manager-dashboard2.png)
 
-![Manager task dashboard](docs/screenshots/manager-dashboard.png)
+### Employee chat
 
-### Employee dashboard
-
-
-![Employee task dashboard](docs/screenshots/employee-dashboard.png)
+![Employee chat and workspace](docs/screenshots/png2.png)
 
 ### Employee invitation email
 
+![Employee setup invitation email](docs/screenshots/image.png)
 
+### Manager chat
 
-![Employee invitation email](docs/screenshots/employee-invitation-email.png)
+![Manager chat window](docs/screenshots/img1.png)
 
-### Firebase employee records
+### Twilio Verify account
 
+![Twilio Verify console](docs/screenshots/img4.png)
 
-![Firebase employee records](docs/screenshots/firebase-employees.png)
+### Firebase Realtime Database
+
+![Firebase Realtime Database](docs/screenshots/img3.png)
+
+Before sharing the README publicly, redact phone numbers, email addresses, verification codes, and private message text from screenshots where needed.
 
 ## What the app does
 
