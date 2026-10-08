@@ -4,7 +4,7 @@ A real-time task management app for a manager and employees. The React/Vite clie
 
 ## Screenshots
 
-The login screenshot is included. Save the remaining screenshots in `docs/screenshots/` using the filenames shown below; the README image references are ready for them.
+
 
 ### Login
 
@@ -12,31 +12,28 @@ The login screenshot is included. Save the remaining screenshots in `docs/screen
 
 ### Manager verification code
 
-Save a screenshot showing the manager code-entry step as `docs/screenshots/manager-verify-code.png`.
 
 ![Manager verification code screen](docs/screenshots/manager-verify-code.png)
 
 ### Manager dashboard
 
-Save a screenshot of the manager task dashboard as `docs/screenshots/manager-dashboard.png`.
+
 
 ![Manager task dashboard](docs/screenshots/manager-dashboard.png)
 
 ### Employee dashboard
 
-Save a screenshot of the employee task dashboard as `docs/screenshots/employee-dashboard.png`.
 
 ![Employee task dashboard](docs/screenshots/employee-dashboard.png)
 
 ### Employee invitation email
 
-Save a screenshot of the employee setup invitation email as `docs/screenshots/employee-invitation-email.png`.
+
 
 ![Employee invitation email](docs/screenshots/employee-invitation-email.png)
 
 ### Firebase employee records
 
-Save a screenshot of the employee records in Firebase Realtime Database as `docs/screenshots/firebase-employees.png`.
 
 ![Firebase employee records](docs/screenshots/firebase-employees.png)
 
