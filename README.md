@@ -120,6 +120,3 @@ Open the Vite URL shown in the terminal, usually `http://localhost:5173`. Vite f
 
 The required manager `POST` endpoints `CreateEmployee`, `GetEmployee`, and `DeleteEmployee` are also available under `/api/owner/`.
 
-## Before deployment
-
-Use HTTPS and set the private environment variables in the hosting provider rather than in source control. Set `NODE_ENV=production` and `APP_BASE_URL` to the deployed app URL. Route `/api` and `/socket.io` to Express. The current rate limits are in memory and suit local/single-instance use; use shared storage for rate limits when running multiple backend instances.
