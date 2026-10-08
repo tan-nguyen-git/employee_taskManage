@@ -4,6 +4,7 @@ import './App.css'
 function App() {
   const [phoneNumber, setPhoneNumber] = useState("")
   const [accessCode, setAccessCode] = useState("")
+  const [codeSent, setCodeSent] = useState(false)
 
   async function handleSendCode(event){
     event.preventDefault();
@@ -21,6 +22,7 @@ function App() {
       if(!response.ok){
         throw new Error(data.message)
       }
+      setCodeSent(true)
       alert(data.message)
 
     }
@@ -30,9 +32,20 @@ function App() {
 
    
   }
-  function handleVerifyCode(event) {
+  async function handleVerifyCode(event) {
     event.preventDefault();
-    console.log("Verify:", phoneNumber, accessCode);
+    try {
+      const response = await fetch("/api/owner/VerifyAccessCode", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ phoneNumber, code: accessCode })
+      });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.message);
+      alert(data.message);
+    } catch (error) {
+      alert(error.message);
+    }
   }
 
   return (
@@ -63,8 +76,9 @@ function App() {
           value={accessCode}
           onChange={(event) => setAccessCode(event.target.value)}
           required
+          disabled={!codeSent}
         />
-        <button type="submit">Verify Code</button>
+        <button type="submit" disabled={!codeSent}>Verify Code</button>
       </form>
     </main>
   );
